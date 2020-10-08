@@ -1,6 +1,9 @@
-node_modules
 package-lock.json
-v8-compile-cache-0
-index.js
+yarn.lock
+yarn-error.log
+
 .babelrc
 webpack.config.js
+
+node_modules
+dist

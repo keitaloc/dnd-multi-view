@@ -82,7 +82,7 @@ export const ItemList = (props: { items; columnId; isColumnDragging }) => {
   );
 };
 
-export const Item = React.memo((props: { item; index }) => {
+export const Item = (props: { item; index }) => {
   const { item, index } = props;
   const { kanbanBoard, grid } = useSelector(
     (state: StoreState) => state.customProps
@@ -108,4 +108,4 @@ export const Item = React.memo((props: { item; index }) => {
       }}
     </Draggable>
   );
-}, isPropsEqual);
+}
